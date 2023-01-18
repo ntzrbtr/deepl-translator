@@ -1,0 +1,22 @@
+{
+    "name": "netzarbeiter/deepl-translator",
+    "description": "Command-line tool to translate language files using DeepL",
+    "type": "project",
+    "require": {
+        "symfony/console": "^6.2",
+        "deeplcom/deepl-php": "^1.2",
+        "symfony/dotenv": "^6.2"
+    },
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Netzarbeiter\\DeeplTranslator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thomas Off",
+            "email": "thomas.off@netzarbeiter.info"
+        }
+    ]
+}
