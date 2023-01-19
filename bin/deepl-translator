@@ -14,7 +14,11 @@ foreach ($autoload as $path) {
 }
 
 $dotenv = new \Symfony\Component\Dotenv\Dotenv();
-$dotenv->loadEnv((rtrim(getcwd(), '/') ?: '.') . '/.env');
+try {
+    $dotenv->loadEnv((rtrim(getcwd(), '/') ?: '.') . '/.env');
+} catch (\Symfony\Component\Dotenv\Exception\PathException $e) {
+    // .env file not found => ignore, will be catched by checking for env variables later.
+}
 
 $application = new \Netzarbeiter\DeeplTranslator\Application();
 $application->run();
