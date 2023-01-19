@@ -5,7 +5,7 @@ by Laravel) using the DeepL API.
 
 ## Installation
 
-Install the package using composer: `composer require --dev netzarbeiter/deepl-translate`.
+Install the package using composer: `composer require --dev ntzrbtr/deepl-translate`.
 
 ## Setup
 

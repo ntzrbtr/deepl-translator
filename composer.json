@@ -1,5 +1,5 @@
 {
-    "name": "netzarbeiter/deepl-translator",
+    "name": "ntzrbtr/deepl-translator",
     "description": "Command-line tool to translate language files using DeepL",
     "type": "project",
     "require": {
