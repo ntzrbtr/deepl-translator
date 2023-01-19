@@ -20,5 +20,8 @@
             "name": "Thomas Off",
             "email": "thomas.off@netzarbeiter.info"
         }
+    ],
+    "bin": [
+        "bin/deepl-translator"
     ]
 }
