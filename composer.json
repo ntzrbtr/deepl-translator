@@ -1,7 +1,6 @@
 {
     "name": "ntzrbtr/deepl-translator",
     "description": "Command-line tool to translate language files using DeepL",
-    "type": "project",
     "require": {
         "php": ">=8.0.0",
         "symfony/console": "^6.2",
