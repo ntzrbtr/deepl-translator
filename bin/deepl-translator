@@ -1,7 +1,17 @@
 #!/usr/bin/env php
 <?php
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+$autoload = [
+    __DIR__ . '/../vendor/autoload.php', // Located at "deepl-translator.phar/bin" or in development.
+    __DIR__ . '/../../../autoload.php', // Located at "vendor/ntzrbtr/deepl-translator/bin".
+    __DIR__ . '/../autoload.php', // Located at "vendor/bin".
+];
+foreach ($autoload as $path) {
+    if (file_exists($path)) {
+        require $path;
+        break;
+    }
+}
 
 $dotenv = new \Symfony\Component\Dotenv\Dotenv();
 $dotenv->loadEnv((rtrim(getcwd(), '/') ?: '.') . '/.env');
